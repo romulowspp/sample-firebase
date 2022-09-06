@@ -1350,6 +1350,23 @@
     reduce-css-calc "^2.1.7"
     tslib "^2.0.0"
 
+"@nativescript/firebase-analytics@^2.3.1":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@nativescript/firebase-analytics/-/firebase-analytics-2.3.4.tgz#410f254a2e3e20badd0d4c1f8d42f8fd37c28655"
+  integrity sha512-Q57dyFO0itOYJ68ShJD4yudDeN+bizhf/iFsh6tb+48e+a4EpMmGU+h0Th83KL3vzBiKDxiKiQi/jlNlpf4uEA==
+
+"@nativescript/firebase-core@^2.3.1":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@nativescript/firebase-core/-/firebase-core-2.3.4.tgz#a7194322dd9e975b2122b74dfac4ab787348d015"
+  integrity sha512-/KrLRo2oWqMhQQXAOD0gq4aSDfLP7ye6VY7vEB4Xz6/YN7Hm3MjYIZS2d3dlu1d7O2zpzQK+SfJngtGQUcq0CQ==
+
+"@nativescript/firebase-crashlytics@^2.3.1":
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/@nativescript/firebase-crashlytics/-/firebase-crashlytics-2.3.4.tgz#93aca144e2eef03e57778dc4b85d8406a97816ee"
+  integrity sha512-j50qbkJ3rmGmv0T1rbP+gFW/EsN1tOdHeKa+d6InbFvSv6tFXCiGmsPBN37uVW+jcfoaYOtLA+xeDHkHIojGlg==
+  dependencies:
+    stacktrace-js "~2.0.2"
+
 "@nativescript/hook@~2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@nativescript/hook/-/hook-2.0.0.tgz#dbc17777d08c657efc77e263dc1ba1896d9c77b5"
@@ -1357,6 +1374,11 @@
   dependencies:
     glob "^7.1.0"
     mkdirp "^1.0.4"
+
+"@nativescript/ios@8.3.3":
+  version "8.3.3"
+  resolved "https://registry.yarnpkg.com/@nativescript/ios/-/ios-8.3.3.tgz#d07e1b03574bd4de8d2ea671932832577f801b02"
+  integrity sha512-5Ac3WGQWKkt2Crw6XeqhLctQs0I2xhvO7+2diq/fyGdcLmdUxl/lerBJRY478S0THNufvnq8HCUIXm90UlpXfg==
 
 "@nativescript/theme@~3.0.2":
   version "3.0.2"
@@ -5444,6 +5466,11 @@ source-map-support@0.5.21, source-map-support@^0.5.5, source-map-support@~0.5.20
     buffer-from "^1.0.0"
     source-map "^0.6.0"
 
+source-map@0.5.6:
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
+  integrity sha512-MjZkVp0NHr5+TPihLcadqnlVoGIoWo4IBHptutGh9wI3ttUYvCG26HkSuDi+K6lsZ25syXJXcctwgyVCt//xqA==
+
 source-map@0.6.1, source-map@^0.6.0, source-map@^0.6.1, source-map@~0.6.0, source-map@~0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
@@ -5494,10 +5521,34 @@ ssri@^9.0.0:
   dependencies:
     minipass "^3.1.1"
 
+stack-generator@^2.0.5:
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/stack-generator/-/stack-generator-2.0.10.tgz#8ae171e985ed62287d4f1ed55a1633b3fb53bb4d"
+  integrity sha512-mwnua/hkqM6pF4k8SnmZ2zfETsRUpWXREfA/goT8SLCV4iOFa4bzOX2nDipWAZFPTjLvQB82f5yaodMVhK0yJQ==
+  dependencies:
+    stackframe "^1.3.4"
+
 stackframe@^1.3.4:
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/stackframe/-/stackframe-1.3.4.tgz#b881a004c8c149a5e8efef37d51b16e412943310"
   integrity sha512-oeVtt7eWQS+Na6F//S4kJ2K2VbRlS9D43mAlMyVpVWovy9o+jfgH8O9agzANzaiLjclA0oYzUXEM4PurhSUChw==
+
+stacktrace-gps@^3.0.4:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/stacktrace-gps/-/stacktrace-gps-3.1.2.tgz#0c40b24a9b119b20da4525c398795338966a2fb0"
+  integrity sha512-GcUgbO4Jsqqg6RxfyTHFiPxdPqF+3LFmQhm7MgCuYQOYuWyqxo5pwRPz5d/u6/WYJdEnWfK4r+jGbyD8TSggXQ==
+  dependencies:
+    source-map "0.5.6"
+    stackframe "^1.3.4"
+
+stacktrace-js@~2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/stacktrace-js/-/stacktrace-js-2.0.2.tgz#4ca93ea9f494752d55709a081d400fdaebee897b"
+  integrity sha512-Je5vBeY4S1r/RnLydLl0TBTi3F2qdfWmYsGvtfZgEI+SCprPppaIhQf5nGcal4gI4cGpCV/duLcAzT1np6sQqg==
+  dependencies:
+    error-stack-parser "^2.0.6"
+    stack-generator "^2.0.5"
+    stacktrace-gps "^3.0.4"
 
 statuses@2.0.1:
   version "2.0.1"
